@@ -178,7 +178,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Shayri_Music_Lovers) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"⛩️ [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/BWF_MUSIC1) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                 else:
                     msg += f"🌹 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
 
@@ -266,21 +266,21 @@ async def overall_stats(client, CallbackQuery, _):
     cm = config.CLEANMODE_DELETE_MINS
     text = f"""🌹 **ʙᴏᴛ's sᴛᴀᴛs ᴀɴᴅ ɪɴғᴏ:**
 
-🌹 **ᴍᴏᴅᴜʟᴇs:** {mod}
-🌹 **ᴄʜᴀᴛs:** {served_chats} 
-🌹 **ᴜsᴇʀs:** {served_users} 
-🌹 **ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
-🌹 **sᴜᴅᴏᴇʀs:** {sudoers} 
+🔥 **ᴍᴏᴅᴜʟᴇs:** {mod}
+💒 **ᴄʜᴀᴛs:** {served_chats} 
+🦋 **ᴜsᴇʀs:** {served_users} 
+✨ **ʙʟᴏᴄᴋᴇᴅ:** {blocked} 
+💌 **sᴜᴅᴏᴇʀs:** {sudoers} 
     
-🌹 **ǫᴜᴇʀɪᴇs:** {total_queries} 
-🌹 **ᴀssɪsᴛᴀɴᴛs:** {assistant}
-🌹 **ᴀss ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ:** {ass}
-🌹 **ᴄʟᴇᴀɴᴍᴏᴅᴇ:** {cm} ᴍɪɴᴜᴛᴇs
+🦋 **ǫᴜᴇʀɪᴇs:** {total_queries} 
+🧸 **ᴀssɪsᴛᴀɴᴛs:** {assistant}
+🕊️ **ᴀss ᴀᴜᴛᴏ ʟᴇᴀᴠᴇ:** {ass}
+🍃 **ᴄʟᴇᴀɴᴍᴏᴅᴇ:** {cm} ᴍɪɴᴜᴛᴇs
 
-🌹 **ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴍɪᴛ:** {play_duration} ᴍɪɴᴜᴛᴇs
-🌹 **ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴍɪᴛ:** {song} ᴍɪɴᴜᴛᴇs
-🌹 **ᴩʟᴀʏʟɪsᴛ ʟɪᴍɪᴛ:** {playlist_limit}
-🌹 **ᴩʟᴀʏʟɪsᴛ ᴩʟᴀʏ ʟɪᴍɪᴛ:** {fetch_playlist}"""
+💮 **ᴅᴜʀᴀᴛɪᴏɴ ʟɪᴍɪᴛ:** {play_duration} ᴍɪɴᴜᴛᴇs
+♥️ **ᴅᴏᴡɴʟᴏᴀᴅ ʟɪᴍɪᴛ:** {song} ᴍɪɴᴜᴛᴇs
+🎟️ **ᴩʟᴀʏʟɪsᴛ ʟɪᴍɪᴛ:** {playlist_limit}
+🥀 **ᴩʟᴀʏʟɪsᴛ ᴩʟᴀʏ ʟɪᴍɪᴛ:** {fetch_playlist}"""
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)
     try:
         await CallbackQuery.edit_message_media(media=med, reply_markup=upl)
